@@ -1,0 +1,30 @@
+.articles{
+    margin-top: 15px;
+    padding: 15px;
+}
+.article-type{
+    background: slategrey;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+}
+.top-story{
+    margin: 0!important;
+    padding: 5px 0;
+    font-size: 18px;
+}
+hr{
+    margin-top: 0!important;
+}
+ul li{
+    list-style-type: none;
+}
+ul li h6{
+    color: blue;
+    cursor: pointer;
+}
+.publish-date{
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: grey;
+}

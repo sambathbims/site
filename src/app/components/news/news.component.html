@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="articles card">
+      <div class="row">
+          <div class="col-md-8">
+            <h1 class="article-type">News</h1>
+            <p class="top-story">Top story</p><hr>
+            <ul>
+              <li *ngFor="let article of articleList">
+                <div *ngIf="article.articleType === 'News'">
+                  <h6 (click)="getIndividualArtile(article.id, article.articleType)">{{article.articleTitle}}</h6>
+                  <p class="publish-date" *ngIf="article.created_at">{{article.created_at | date: 'mediumDate'}} | {{article.articleAuthor}}</p>
+                  
+                  <p>{{article.articleSummary}}</p><hr>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+              <app-sidebar></app-sidebar>
+          </div>
+        </div>
+    </div>
+  </div>

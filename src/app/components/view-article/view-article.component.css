@@ -1,0 +1,10 @@
+.article-details, .side-bar{
+    margin-top: 60px;
+}
+.article-details h3{
+    margin: 0;
+}
+.article-details h6{
+    font-weight: bold;
+    margin-bottom: 20px;
+}

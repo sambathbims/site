@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="article">
+        <h1 class="article-type">You may also like</h1>
+        <ul>
+            <li *ngFor="let article of articleList">
+                <div>
+                <h6>{{article.articleTitle}}</h6>
+                <p class="publish-date">{{article.created_at | date: 'mediumDate'}}  | {{article.articleAuthor}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
